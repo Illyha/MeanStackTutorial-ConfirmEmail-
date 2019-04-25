@@ -9,8 +9,8 @@ module.exports = function(router) {
 	// Start Sendgrid Configuration Settings	
 	var options = {
 		auth: {
-			api_user: 'themeanstack', // Sendgrid username
-			api_key: 'PAssword123!@#' // Sendgrid password
+			api_user: 'SeriosniyPazik221', // Sendgrid username
+			api_key: 'SendGridGetIt123' // Sendgrid password
 		}
 	}
 	var client = nodemailer.createTransport(sgTransport(options));
@@ -60,7 +60,7 @@ module.exports = function(router) {
 				} else {
 					// Create e-mail object to send to user
 					var email = {
-						from: 'Localhost Staff, staff@localhost.com',
+						from: 'Illyha, slivchuk228@gmail.com',
 						to: user.email,
 						subject: 'Localhost Activation Link',
 						text: 'Hello ' + user.name + ', thank you for registering at localhost.com. Please click on the following link to complete your activation: http://localhost:8080/activate/' + user.temporarytoken,
